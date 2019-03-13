@@ -1,0 +1,21 @@
+// Istruzioni per caricare su github un progetto codenvy/java
+
+// Creare una nuova repository chiamata webDB su github e prendere nota del suo URL
+// Andare nella cartella del progetto e dare i seguenti comandi:
+
+// inizializza la cartella per poter utilizzare git - da fare solo la prima volta
+git init 
+
+// controlla i file da caricare su github
+git add * 
+
+// conferma che vogliamo caricare i file
+git commit -m "first commit" 
+
+// indica in quale repository vanno aggiunti i file - da fare solo la prima volta
+git remote add origin https://github.com/<username>/webDB.git
+
+// aggiunge effettivamente su github i file indicati - verranno richesti username e password
+git push -u origin master
+
+// per ulteriori info: https://rogerdudler.github.io/git-guide/index.it.html
